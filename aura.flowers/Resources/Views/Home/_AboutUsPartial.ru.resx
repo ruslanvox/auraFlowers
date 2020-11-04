@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about-us-how-we-work-header" xml:space="preserve">
+    <value>Как Мы Работаем</value>
+  </data>
+  <data name="about-us-how-we-work-text" xml:space="preserve">
+    <value>Мы создаем цветы и композиции из качественного материала, за которым просто и удобно ухаживать (ISOLON, фоам). Предлагаем аренду наших изделий. Мы открыты к сотрудничеству и готовы творить вместе с Вами.</value>
+  </data>
+  <data name="about-us-our-philosophy-header" xml:space="preserve">
+    <value>Наша Философия</value>
+  </data>
+  <data name="about-us-our-philosophy-text" xml:space="preserve">
+    <value>Дарить радость и отличное настроение! Нет ничего невозможного! Мы всегда Вам рады и готовы воплотить Ваши любые интерьерные фантазии. Каждое изделие выполнено с любовью.</value>
+  </data>
+  <data name="about-us-our-studio-header" xml:space="preserve">
+    <value>Наша Студия</value>
+  </data>
+  <data name="about-us-our-studio-text" xml:space="preserve">
+    <value>Креативная мастерская и шоурум</value>
+  </data>
+  <data name="about-us-our-team-header" xml:space="preserve">
+    <value>Команда</value>
+  </data>
+  <data name="about-us-our-team-text" xml:space="preserve">
+    <value>Профи, любящие свою работу</value>
+  </data>
+  <data name="about-us-our-walls-header" xml:space="preserve">
+    <value>Фотостены</value>
+  </data>
+  <data name="about-us-our-walls-text" xml:space="preserve">
+    <value>Огромные фотостены из наших цветов</value>
+  </data>
+  <data name="about-us-subtitle" xml:space="preserve">
+    <value>Цветы, которые сделают Вас счастливыми.</value>
+  </data>
+  <data name="about-us-title" xml:space="preserve">
+    <value>О Нас</value>
+  </data>
+  <data name="about-us-title-text" xml:space="preserve">
+    <value>Хотите отличное решение для интерьера квартиры, дома, офиса и  магазина?</value>
+  </data>
+  <data name="about-us-title-text-ono" xml:space="preserve">
+    <value>Оно есть у нас!</value>
+  </data>
+  <data name="about-us-who-we-are-header" xml:space="preserve">
+    <value>Кто Мы</value>
+  </data>
+  <data name="about-us-who-we-are-text" xml:space="preserve">
+    <value>Мы студия интерьерного дизайна AURA Decor в Братиславе! Мы специализируемся на оформлении мероприятий и помещений для любых целей. Мы делаем прекрасные большие композиции.</value>
+  </data>
+</root>

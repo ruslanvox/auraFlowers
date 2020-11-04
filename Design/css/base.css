@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #E9204F;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* Input forms */
+
+.form-input-data p {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.form-input-data p span {
+    color: #E9204F;
+}
+
+.input-text,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-text:focus {
+    outline: none !important;
+    border: 1px solid #E9204F;
+}
+
+.input-submit {
+    width: 100%;
+    background-color: #1e73be;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-submit:hover {
+    background-color: #4a97c2;
+}
+
+form .form-button {
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+    width: 175px;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 1.0em 1.0em 1.0em 1.0em;
+    border: rgb(175, 62, 88) solid 0px;
+    background-color: rgb(175, 62, 88);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+form .form-button:hover {
+    background-color: rgb(129, 29, 53)
+}
+
+.button {
+    width: 200px;
+    z-index: 1;
+    position: relative;
+    font-size: 1.10em;
+    font-weight: bold;
+    font-family: inherit;
+    color: #262626;
+    padding: 1.0em 0.25em 1.0em 0.25em;
+    outline: none;
+    border: #E9204F solid 2px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E9204F;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 7.5px;
+}
+
+.button:hover::before {
+    transform-origin: center;
+    border-radius: 7.5px;
+    transform: scaleX(1);
+}
+
+.button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.pillars-link {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    position: relative;
+}
+
+.pillars-link::before,
+.pillars-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #E9204F;
+    transform-origin: center;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+}
+
+.pillars-link::before {
+    left: -8px;
+}
+
+.pillars-link::after {
+    right: -8px;
+}
+
+.pillars-link:hover::before,
+.pillars-link:hover::after {
+    transform: scaleY(1);
+}
+
+
+/* Social buttons */
+
+.social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-weight: normal;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    width: 2.125rem;
+    height: 2.125rem;
+    line-height: 1.65em;
+    font-size: 1.2625rem;
+}
+
+.social-button.middle {
+    width: 2.125rem;
+    height: 2.125rem;
+    line-height: 1.65em;
+    font-size: 1.2625rem;
+}
+
+.social-button.big {
+    width: 3.125rem;
+    height: 3.125rem;
+    line-height: 2em;
+    font-size: 1.5625rem;
+}
+
+.social-button:hover,
+.social-button:focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.social-button.facebook {
+    color: #AF3E58;
+    border-color: #AF3E58;
+}
+
+.social-button.facebook:before {
+    content: "\f39e";
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.social-button.facebook:hover,
+.social-button.facebook:focus {
+    color: #AF3E58;
+    border-color: #AF3E58;
+}
+
+.social-button.instagram {
+    color: #AF3E58;
+    border-color: #AF3E58;
+}
+
+.social-button.instagram:before {
+    content: "\f16d";
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.social-button.instagram:hover,
+.social-button.instagram:focus {
+    color: #AF3E58;
+    border-color: #AF3E58;
+}
+
+.social-button.mailto {
+    color: #AF3E58;
+    border-color: #AF3E58;
+}
+
+.social-button.mailto:before {
+    content: "\f0e0";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.social-button.mailto:hover,
+.social-button.mailto:focus {
+    color: #AF3E58;
+    border-color: #AF3E58;
+}

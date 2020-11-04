@@ -1,0 +1,122 @@
+﻿<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150038532-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150038532-1');
+    </script>
+
+    <meta name="description" content="Decor interior studio in Bratislava. Specialize in decorating of events and spaces for any purpose. We make wonderful big compositions and flowers.">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>@*@ViewData["Title"] -*@ AURA.Flowers</title>
+
+    <environment include="Development">
+
+    </environment>
+    <environment exclude="Development">
+
+    </environment>
+    <link rel="stylesheet" href="/assets/font-awesome/all.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/brands.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+</head>
+<body>
+    <nav id="navigation-section">
+        <div class="menu-container">
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+                <img src="/img/logo.png" alt="AURA.Flowers logo">
+            </div>
+
+            <div class="logo">
+                <a href="#header-section"><img src="/img/logo.png" alt="AURA.Flowers logo"></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a class="scroll-to" id="about-as-menu" href="#about-us-section"><span>@Localizer["menu-about-us"]</span></a></li>
+                    <li><a class="scroll-to" href="#products-section">@Localizer["menu-products"]</a></li>
+                    <li><a class="scroll-to" href="#portfolio-section">@Localizer["menu-portfolio"]</a></li>
+                    <li><a class="scroll-to" href="#testimonials-section">@Localizer["menu-feedback"]</a></li>
+                    <li><a class="scroll-to" href="#contacts-section">@Localizer["menu-contacts"]</a></li>
+                    <li>@await Html.PartialAsync("_SelectLanguagePartial")</li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li>
+                        <a class="social-button facebook" href="https://www.facebook.com/auradecor.bigflowers/" title="AURA Decor Facebook" alt="AURA Decor Facebook" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social-button instagram" href="https://www.instagram.com/auradecor_bigflowers/" title="AURA Decor Instagram" alt="AURA Decor Instagram" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social-button mailto" href="mailto:info@aura.flowers" title="AURA Decor Mail" alt="AURA Decor Mail" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="social-button viber" href="viber://chat?number=+421905946443" title="AURA Decor Viber" alt="AURA Decor Viber"></a>
+                    </li>
+                    <li>
+                        <a class="social-button whatsup" href="https://wa.me/421905946443" title="AURA Decor Whatsup" alt="AURA Decor Whatsup" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @await Html.PartialAsync("_HeaderPartial")
+
+    @*<partial name="_CookieConsentPartial" />*@
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    @await Html.PartialAsync("_FooterPartial")
+
+    <!-- Modal windows -->
+    @await Html.PartialAsync("_ContactUsModalPartial")
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    </environment>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="~/js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

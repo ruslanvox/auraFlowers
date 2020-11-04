@@ -1,0 +1,93 @@
+﻿@model List<website.core.Models.Auth.User>
+
+@{
+    Layout = "_LayoutAdmin";
+    ViewData["Title"] = "Account management";
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+</div>
+
+<div class="row">
+    <div class="col-8">
+        <h2 class="h2 p-3">Account management</h2>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-secondary"><i class="fa fa-arrow-left"></i> Back</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-hover table-striped table-responsive-lg">
+            <thead class="thead-light">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model[0].Id)</th>
+                    <th>@Html.DisplayNameFor(model => model[0].UserName)</th>
+                    <th>@Html.DisplayNameFor(model => model[0].Email)</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.HiddenFor(model => user.Id)
+                            <label class="form-control-plaintext">@user.Id</label>
+                        </td>
+                        <td>
+                            <label class="form-control-plaintext">@user.UserName</label>
+                        </td>
+                        <td>
+                            <label class="form-control-plaintext">@user.UserName</label>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-block btn-secondary"
+                               asp-action="ChangePassword"
+                               asp-controller="Account"
+                               asp-route-id="@user.Id"><i class="fa fa-key"></i></a>
+                        </td>
+                        @if (user.Id != "868c961d-0af6-4c4d-8ae1-3a46cea933a8")
+                        {
+                            @using (Html.BeginForm("Remove", "Account", FormMethod.Post))
+                            {
+                                <td class="text-center">
+                                    <input type="hidden" value="@user.Id" name="id" />
+                                    <button class="btn btn-block btn-danger"
+                                            type="submit"
+                                            title="Remove user"
+                                            onclick="if (!confirm('Do you really want to delete this delete this user?')) { return false; }">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </td>
+                            }
+                        }
+                        else
+                        {
+                            <td>
+                                <button class="btn btn-block btn-danger"
+                                        type="submit"
+                                        title="Remove user"
+                                        disabled="">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="col-12 p-3">
+    <a href="@Url.Action("Register", "Account")" class="btn btn-block btn-outline-secondary text-center">
+        <i class="fa fa-plus"></i> Add a new user
+    </a>
+</div>

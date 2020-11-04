@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="portfolio-item-description-1" xml:space="preserve">
+    <value>Подарит ощущение спокойствия и умиротворения.</value>
+  </data>
+  <data name="portfolio-item-description-10" xml:space="preserve">
+    <value>Создаст уют и комфорт в Вашем доме.</value>
+  </data>
+  <data name="portfolio-item-description-11" xml:space="preserve">
+    <value>Белый, нежный и шикарный.</value>
+  </data>
+  <data name="portfolio-item-description-12" xml:space="preserve">
+    <value>Черный цвет - экстравагантная классика.</value>
+  </data>
+  <data name="portfolio-item-description-13" xml:space="preserve">
+    <value>Образ для фотосессии.</value>
+  </data>
+  <data name="portfolio-item-description-14" xml:space="preserve">
+    <value>Подарите момент сказки.</value>
+  </data>
+  <data name="portfolio-item-description-2" xml:space="preserve">
+    <value>Нежный и эффектный цветок украсит любое помещение.</value>
+  </data>
+  <data name="portfolio-item-description-3" xml:space="preserve">
+    <value>Яркий элемент в интерьере поднимает настроение.</value>
+  </data>
+  <data name="portfolio-item-description-4" xml:space="preserve">
+    <value>Сказочный цветок для принцесс.</value>
+  </data>
+  <data name="portfolio-item-description-5" xml:space="preserve">
+    <value>Создаст уют и комфорт в Вашем доме.</value>
+  </data>
+  <data name="portfolio-item-description-6" xml:space="preserve">
+    <value>Добавьте красоту и поэтичность в свой интерьер.</value>
+  </data>
+  <data name="portfolio-item-description-7" xml:space="preserve">
+    <value>Новогодний декор.</value>
+  </data>
+  <data name="portfolio-item-description-8" xml:space="preserve">
+    <value>Символ величия и силы жизни.</value>
+  </data>
+  <data name="portfolio-item-description-9" xml:space="preserve">
+    <value>Кто ты, лебедь или ангел?</value>
+  </data>
+  <data name="portfolio-item-header-1" xml:space="preserve">
+    <value>Морское настроение</value>
+  </data>
+  <data name="portfolio-item-header-10" xml:space="preserve">
+    <value>Ранункулюс-Лампа</value>
+  </data>
+  <data name="portfolio-item-header-11" xml:space="preserve">
+    <value>Пион</value>
+  </data>
+  <data name="portfolio-item-header-12" xml:space="preserve">
+    <value>Фотозона</value>
+  </data>
+  <data name="portfolio-item-header-13" xml:space="preserve">
+    <value>Шляпка</value>
+  </data>
+  <data name="portfolio-item-header-14" xml:space="preserve">
+    <value>Фотосессии</value>
+  </data>
+  <data name="portfolio-item-header-2" xml:space="preserve">
+    <value>Камелия</value>
+  </data>
+  <data name="portfolio-item-header-3" xml:space="preserve">
+    <value>Ананас-Лампа</value>
+  </data>
+  <data name="portfolio-item-header-4" xml:space="preserve">
+    <value>Фуксия</value>
+  </data>
+  <data name="portfolio-item-header-5" xml:space="preserve">
+    <value>Пион-Лампа</value>
+  </data>
+  <data name="portfolio-item-header-6" xml:space="preserve">
+    <value>Гербера</value>
+  </data>
+  <data name="portfolio-item-header-7" xml:space="preserve">
+    <value>Шишка</value>
+  </data>
+  <data name="portfolio-item-header-8" xml:space="preserve">
+    <value>Георгин</value>
+  </data>
+  <data name="portfolio-item-header-9" xml:space="preserve">
+    <value>Крылья</value>
+  </data>
+  <data name="portfolio-item-order-button" xml:space="preserve">
+    <value>Заказать</value>
+  </data>
+  <data name="portfolio-subtitle" xml:space="preserve">
+    <value>Сделано нами для вас</value>
+  </data>
+  <data name="portfolio-title" xml:space="preserve">
+    <value>Портфолио</value>
+  </data>
+</root>

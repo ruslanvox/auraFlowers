@@ -1,0 +1,261 @@
+.head-banner {
+    background: url(/auraFlowers/aura.flowers-master/Design/img/head_banner.png);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: 115%;
+    margin: 0 auto;
+    max-width: 1250px;
+    opacity: 0;
+}
+
+.head-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    max-width: 1200px;
+    height: 2px;
+    background: rgba(43, 43, 43, 0.1);
+    z-index: 99999;
+    transform: scaleX(0);
+}
+
+.container-header {
+    margin: 0;
+    min-height: 810px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-line {
+    border-top: 3px;
+    border-color: #E9204F;
+    border-style: solid;
+    margin: 0;
+    width: 0;
+    padding: 0;
+    flex: 0;
+    opacity: 0;
+}
+
+.container-header h1 {
+    color: #262626;
+    font-size: 4em;
+    font-weight: 700;
+    max-width: 500px;
+    margin-bottom: 0px;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.container-header h2 {
+    color: #E9204F;
+    font-size: 2.0em;
+    font-weight: 700;
+    max-width: 500px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.container-header .button-header {
+    width: 200px;
+    z-index: 1;
+    position: relative;
+    font-size: 1.10em;
+    font-weight: bold;
+    font-family: inherit;
+    color: #262626;
+    padding: 1.0em 0.25em 1.0em 0.25em;
+    outline: none;
+    border: #E9204F solid 2px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.container-header .button-header::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E9204F;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.container-header .button-header:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+.container-header .button-header:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    .container-header {
+        background: rgba(255, 255, 255, 0.7);
+        transition: 1s;
+    }
+}
+
+
+/* Animations */
+
+.loaded .head-banner {
+    -webkit-animation: opacityIn 2.0s ease-in-out 0s forwards;
+    -moz-animation: opacityIn 2.0s ease-in-out 0s forwards;
+    -o-animation: opacityIn 2.0s ease-in-out 0s forwards;
+    animation: opacityIn 2.0s ease-in-out 0s forwards;
+}
+
+.loaded .head-banner::after {
+    -webkit-animation: scaleIn 1.3s ease-in-out 1.5s forwards;
+    -moz-animation: scaleIn 1.3s ease-in-out 1.5s forwards;
+    -o-animation: scaleIn 1.3s ease-in-out 1.5s forwards;
+    animation: scaleIn 1.3s ease-in-out 1.5s forwards;
+}
+
+.loaded .head-banner .header-line {
+    -webkit-animation: fromLeftByWidht 0.3s ease-in-out 1.5s forwards;
+    -moz-animation: fromLeftByWidht 0.3s ease-in-out 1.5s forwards;
+    -o-animation: fromLeftByWidht 0.3s ease-in-out 1.5s forwards;
+    animation: fromLeftByWidht 0.3s ease-in-out 1.5s forwards;
+}
+
+.loaded .container-header h1 {
+    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
+    -moz-animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
+    -o-animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
+    animation: onYAxisOpacity 0.3s ease-in-out 2.0s forwards;
+}
+
+.loaded .container-header h2 {
+    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
+    -moz-animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
+    -o-animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
+    animation: onYAxisOpacity 0.3s ease-in-out 2.25s forwards;
+}
+
+.loaded .container-header .button-header {
+    -webkit-animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
+    -moz-animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
+    -o-animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
+    animation: onYAxisOpacity 0.3s ease-in-out 2.75s forwards;
+}
+
+.loaded nav .menu ul li:nth-child(5) {
+    -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
+    -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
+    -o-animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
+    animation: onXAxisOpacity 0.3s ease-in-out 1.0s forwards;
+}
+
+.loaded nav .menu ul li:nth-child(4) {
+    -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
+    -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
+    -o-animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
+    animation: onXAxisOpacity 0.3s ease-in-out 1.3s forwards;
+}
+
+.loaded nav .menu ul li:nth-child(3) {
+    -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
+    -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
+    -o-animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
+    animation: onXAxisOpacity 0.3s ease-in-out 1.6s forwards;
+}
+
+.loaded nav .menu ul li:nth-child(2) {
+    -webkit-animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
+    -moz-animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
+    -o-animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
+    animation: onXAxisOpacity 0.3s ease-in-out 1.9s forwards;
+}
+
+.loaded nav .menu ul li:nth-child(1) {
+    -webkit-animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
+    -moz-animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
+    -o-animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
+    animation: onXAxisOpacity 0.3s ease-in-out 2.2s forwards;
+}
+
+.loaded nav .logo {
+    -webkit-animation: opacityIn 1.0s ease-in-out 2.5s forwards;
+    -moz-animation: opacityIn 1.0s ease-in-out 2.5s forwards;
+    -o-animation: opacityIn 1.0s ease-in-out 2.5s forwards;
+    animation: opacityIn 1.0s ease-in-out 2.5s forwards;
+}
+
+.loaded nav .social ul li:nth-child(1) {
+    -webkit-animation: scaleInRotateIn 0.3s ease-in-out 1.0s forwards;
+    -moz-animation: scaleInRotateIn 0.3s ease-in-out 1.0s forwards;
+    -o-animation: scaleInRotateIn 0.3s ease-in-out 1.0s forwards;
+    animation: scaleInRotateIn 0.3s ease-in-out 1.0s forwards;
+}
+
+.loaded nav .social ul li:nth-child(2) {
+    -webkit-animation: scaleInRotateIn 0.3s ease-in-out 1.3s forwards;
+    -moz-animation: scaleInRotateIn 0.3s ease-in-out 1.3s forwards;
+    -o-animation: scaleInRotateIn 0.3s ease-in-out 1.3s forwards;
+    animation: scaleInRotateIn 0.3s ease-in-out 1.3s forwards;
+}
+
+.loaded nav .social ul li:nth-child(3) {
+    -webkit-animation: scaleInRotateIn 0.3s ease-in-out 1.6s forwards;
+    -moz-animation: scaleInRotateIn 0.3s ease-in-out 1.6s forwards;
+    -o-animation: scaleInRotateIn 0.3s ease-in-out 1.6s forwards;
+    animation: scaleInRotateIn 0.3s ease-in-out 1.6s forwards;
+}
+
+@keyframes opacityIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scaleInRotateIn {
+    100% {
+        transform: scaleX(1) rotate(0deg);
+    }
+}
+
+@keyframes fromLeftByWidht {
+    100% {
+        opacity: 1;
+        width: 100px
+    }
+}
+
+@keyframes onXAxisOpacity {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes onYAxisOpacity {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
